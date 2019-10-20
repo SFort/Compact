@@ -251,27 +251,29 @@
 	}
 	
 	layout
-	{
-		place {	control="AvatarImage"			x=2 y=4 width=32 height=32		}
-		place {	control="AvatarOverlayImage"	x=0 y=2 width=36 height=36		}
-		place {	control="Clanstatusimage"			x=17  width=15 }
-		place { control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel" x=42 y=1 }
-		place { control="MenuButton" x=42 y=6  height=0 }
-		
-		place { control="StatusLabel,BigPictureStatusImage,VRStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame"		x=52 y=13 }
-		place { control="GameLabel"			x=52 y=25 }
+    {
+        place {    control="AvatarImage"           width=32 height=32 align=top-center margin-right=120 }
+        place {    control="AvatarOverlayImage"    x=-50 y=0 width=0 height=0 }
+        place {    control="Clanstatusimage"       x=17  width=15 }
+        place { control="ClanStatusImage,NameLabel"align=top-center margin-right=350 margin-top=20}
+        place { control="FriendsNameInstanceLabel" align=top-center margin-right=350}
+        place { control="MenuButton" x=42 y=6  height=0 }
+        
+        place { control="StatusLabel,BigPictureStatusImage,VRStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame"        align=top-center margin-left=100 }
+        place { control="GameLabel"            align=top-center margin-top=20 margin-left=100}
 
-		// these controls are shown for friendship requests
-		place { control="AcceptLink,IgnoreLink,BlockLink"	x=52 y=14 spacing=8 }
-		
-		// this control is shown in the invite-to-game dialog in the overlay
-		place { control="InviteToGameButton" align=right y=4 padding-right=6 margin-right=20 }
-		
-		place { control="ControlPanelLink" x=42 y=25 }
-		
-		// Facebook stuff? Needs testing
-		place { control="SuggestedImage,SuggestedLabel" x=50 y=26 spacing=4 }
-		place { control="SuggestedInvite,SuggestedIgnore" x=50 y=38 spacing=8 }
+        // these controls are shown for friendship requests
+        place { control="AcceptLink,IgnoreLink,BlockLink"    x=52 y=14 spacing=8 }
+        
+        // this control is shown in the invite-to-game dialog in the overlay
+        place { control="InviteToGameButton" align=right y=4 padding-right=6 margin-right=20 }
+        
+        place { control="ControlPanelLink" x=42 y=25 }
+        
+        // Facebook stuff? Needs testing
+        place { control="SuggestedImage,SuggestedLabel" x=50 y=26 spacing=4 }
+        place { control="SuggestedInvite,SuggestedIgnore" x=50 y=38 spacing=8 }
 
-	}
+    }
+
 }
