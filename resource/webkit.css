@@ -1,3 +1,9 @@
+[class*=”libraryhome_WhatsNew”] {
+display: none !important;
+}
+.libraryhome_UpdatesContainer_17uEB {
+display: none !important;
+}
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-corner {
 	width: 11px;
